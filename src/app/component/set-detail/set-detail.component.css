@@ -1,0 +1,35 @@
+.set-item-card {
+    margin: 5%;
+}
+
+.set-images-container {
+    padding: 5%;
+}
+
+img.mat-card-image {
+    max-width: 500px;
+    margin: 0;
+}
+
+.mat-card-content > div {
+    width: 33.33%;
+    display: inline-block;
+}
+
+.mat-card-content .mat-card-title {
+    font-size: 14px;
+}
+
+.mat-card-header, .remove-set {
+	display: inline-block;
+}
+
+.mat-card-header {
+	width: 75%;
+}
+
+.remove-set {
+	width: 25%;
+	height: 56px;
+	vertical-align: super;
+}

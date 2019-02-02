@@ -1,0 +1,33 @@
+<div style="text-align:center" class="login-card-container">
+    <form method="post" action="#" role="form">
+        <mat-card class="login-container-card">
+            <mat-card-header>
+                <div mat-card-avatar class="login-header-image"></div>
+                <mat-card-title>Welcome to {{ title }}!</mat-card-title>
+                <mat-card-subtitle>build what you think</mat-card-subtitle>
+            </mat-card-header>
+            <div class="fields-container">
+                <mat-form-field>
+                    <input matInput required
+                           type="email"
+                           id="email"
+                           placeholder="Email"
+                           [(ngModel)]="email"
+                           [ngModelOptions]="{standalone: true}">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput required
+                           [type]="hide ? 'password' : 'text'"
+                           id="password"
+                           placeholder="Password"
+                           [(ngModel)]="password"
+                           [ngModelOptions]="{standalone: true}">
+                    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="login-buttons-container">
+                <button mat-button (click)="onLogin()" type="submit" class="back-primary">Sign in</button>
+            </div>
+        </mat-card>
+    </form>
+</div>
